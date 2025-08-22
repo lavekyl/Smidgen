@@ -146,11 +146,10 @@ CSS
 
 ```
 :root {
-  --grid-columns: 12;
   --grid-gutter: 1.5rem;
+  --container-narrow: 900px;
   --container-standard: 1140px;
-  --breakpoint-md: 768px;
-  /* ...and more */
+  --container-wide: 1320px;
 }
 
 ```

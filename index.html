@@ -84,9 +84,18 @@
         border-radius: 5px;
         font-weight: bold;
         margin-top: 1rem;
+        transition: background-color 0.2s ease-in-out,
+          transform 0.2s ease-in-out;
+      }
+      .cta-button.secondary {
+        background-color: #eee;
+        color: #333;
       }
       .cta-button:hover {
-        background-color: #000;
+        background-color: #555555;
+      }
+      .cta-button.secondary:hover {
+        background-color: #ddd;
       }
 
       .footer {
@@ -121,8 +130,7 @@
         >
         <a
           href="https://github.com/lavekyl/Smidgen"
-          class="cta-button"
-          style="background-color: #eee; color: #333"
+          class="cta-button secondary"
           target="_blank"
           >View on GitHub</a
         >
