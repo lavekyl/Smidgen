@@ -101,7 +101,7 @@
       .footer {
         text-align: center;
         font-size: 0.9rem;
-        color: #888;
+        color: #666666;
         border-top: 1px solid #eee;
       }
 
@@ -116,7 +116,7 @@
     </style>
   </head>
   <body>
-    <div class="content-wrapper hero">
+    <header class="content-wrapper hero">
       <div class="content-well">
         <h1>Smidgen CSS</h1>
         <p>
@@ -135,148 +135,151 @@
           >View on GitHub</a
         >
       </div>
-    </div>
+    </header>
 
-    <div class="content-wrapper">
-      <div class="content-well-wide">
-        <h2>The Grid</h2>
-        <p>
-          The grid is a 12-column fluid grid with a max width. It's designed to
-          be mobile-first. Columns stack on small screens and expand as the
-          viewport increases.
-        </p>
+    <main>
+      <div class="content-wrapper">
+        <div class="content-well-wide">
+          <h2>The Grid</h2>
+          <p>
+            The grid is a 12-column fluid grid with a max width. It's designed
+            to be mobile-first. Columns stack on small screens and expand as the
+            viewport increases.
+          </p>
 
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-1"><div class="demo-box">1</div></div>
-          <div class="flex-col md-11"><div class="demo-box">11</div></div>
-        </div>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-2"><div class="demo-box">2</div></div>
-          <div class="flex-col md-10"><div class="demo-box">10</div></div>
-        </div>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-3"><div class="demo-box">3</div></div>
-          <div class="flex-col md-9"><div class="demo-box">9</div></div>
-        </div>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-4"><div class="demo-box">4</div></div>
-          <div class="flex-col md-8"><div class="demo-box">8</div></div>
-        </div>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-5"><div class="demo-box">5</div></div>
-          <div class="flex-col md-7"><div class="demo-box">7</div></div>
-        </div>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col md-6"><div class="demo-box">6</div></div>
-          <div class="flex-col md-6"><div class="demo-box">6</div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper">
-      <div class="content-well">
-        <h2>Containers</h2>
-        <p>
-          Use containers to constrain and center your content. Each is shown
-          below within a full-width `.content-wrapper` to demonstrate its
-          max-width.
-        </p>
-      </div>
-    </div>
-
-    <div class="content-wrapper" style="background-color: #f4f4f4">
-      <div class="content-well-narrow">
-        <div
-          class="demo-box"
-          style="background-color: #fff; border: 1px solid #eee"
-        >
-          .content-well-narrow (900px)
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper" style="background-color: #f4f4f4">
-      <div class="content-well">
-        <div
-          class="demo-box"
-          style="background-color: #fff; border: 1px solid #eee"
-        >
-          .content-well (1140px)
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper" style="background-color: #f4f4f4">
-      <div class="content-well-wide">
-        <div
-          class="demo-box"
-          style="background-color: #fff; border: 1px solid #eee"
-        >
-          .content-well-wide (1320px)
-        </div>
-      </div>
-    </div>
-
-    <div class="content-wrapper">
-      <div class="content-well">
-        <h2>More Features</h2>
-
-        <h3>Auto & Shrink Columns</h3>
-        <p>
-          Use <code>.col-auto</code> to have a column fill remaining space, and
-          <code>.col-shrink</code> to have it only take up the space its content
-          needs.
-        </p>
-        <div class="flex-grid with-gutters">
-          <div class="flex-col col-shrink">
-            <div class="demo-box">Shrink</div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-1"><div class="demo-box">1</div></div>
+            <div class="flex-col md-11"><div class="demo-box">11</div></div>
           </div>
-          <div class="flex-col col-auto"><div class="demo-box">Auto</div></div>
-          <div class="flex-col sm-3"><div class="demo-box">sm-3</div></div>
-        </div>
-
-        <h3>Alignment Utilities</h3>
-        <p>
-          Easily align columns horizontally and vertically. Below, we align
-          three columns with space around them.
-        </p>
-
-        <div class="flex-grid with-gutters justify-around">
-          <div class="flex-col sm-3"><div class="demo-box">Item 1</div></div>
-          <div class="flex-col sm-3"><div class="demo-box">Item 2</div></div>
-          <div class="flex-col sm-3"><div class="demo-box">Item 3</div></div>
-        </div>
-
-        <p style="margin-top: 1.5rem">
-          You can also control vertical alignment for an entire row or for
-          individual columns.
-        </p>
-
-        <div
-          class="flex-grid with-gutters align-middle"
-          style="height: 120px; background-color: #f4f4f4; border-radius: 4px"
-        >
-          <div class="flex-col sm-4 self-top">
-            <div class="demo-box">Self Top</div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-2"><div class="demo-box">2</div></div>
+            <div class="flex-col md-10"><div class="demo-box">10</div></div>
           </div>
-          <div class="flex-col sm-4">
-            <div class="demo-box">Aligned Middle</div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-3"><div class="demo-box">3</div></div>
+            <div class="flex-col md-9"><div class="demo-box">9</div></div>
           </div>
-          <div class="flex-col sm-4 self-bottom">
-            <div class="demo-box">Self Bottom</div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-4"><div class="demo-box">4</div></div>
+            <div class="flex-col md-8"><div class="demo-box">8</div></div>
+          </div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-5"><div class="demo-box">5</div></div>
+            <div class="flex-col md-7"><div class="demo-box">7</div></div>
+          </div>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col md-6"><div class="demo-box">6</div></div>
+            <div class="flex-col md-6"><div class="demo-box">6</div></div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="content-wrapper">
-      <div class="content-well-wide">
-        <h2>Quick Start</h2>
-        <p>
-          Just add the `smidgen.min.css` file and start building with this
-          simple structure.
-        </p>
-        <pre><code>&lt;!-- A full-width section with a centered container --&gt;
+      <div class="content-wrapper">
+        <div class="content-well">
+          <h2>Containers</h2>
+          <p>
+            Use containers to constrain and center your content. Each is shown
+            below within a full-width `.content-wrapper` to demonstrate its
+            max-width.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-wrapper" style="background-color: #f4f4f4">
+        <div class="content-well-narrow">
+          <div
+            class="demo-box"
+            style="background-color: #fff; border: 1px solid #eee"
+          >
+            .content-well-narrow (900px)
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper" style="background-color: #f4f4f4">
+        <div class="content-well">
+          <div
+            class="demo-box"
+            style="background-color: #fff; border: 1px solid #eee"
+          >
+            .content-well (1140px)
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper" style="background-color: #f4f4f4">
+        <div class="content-well-wide">
+          <div
+            class="demo-box"
+            style="background-color: #fff; border: 1px solid #eee"
+          >
+            .content-well-wide (1320px)
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="content-well">
+          <h2>More Features</h2>
+
+          <h3>Auto & Shrink Columns</h3>
+          <p>
+            Use <code>.col-auto</code> to have a column fill remaining space,
+            and <code>.col-shrink</code> to have it only take up the space its
+            content needs.
+          </p>
+          <div class="flex-grid with-gutters">
+            <div class="flex-col col-shrink">
+              <div class="demo-box">Shrink</div>
+            </div>
+            <div class="flex-col col-auto">
+              <div class="demo-box">Auto</div>
+            </div>
+            <div class="flex-col sm-3"><div class="demo-box">sm-3</div></div>
+          </div>
+
+          <h3>Alignment Utilities</h3>
+          <p>
+            Easily align columns horizontally and vertically. Below, we align
+            three columns with space around them.
+          </p>
+
+          <div class="flex-grid with-gutters justify-around">
+            <div class="flex-col sm-3"><div class="demo-box">Item 1</div></div>
+            <div class="flex-col sm-3"><div class="demo-box">Item 2</div></div>
+            <div class="flex-col sm-3"><div class="demo-box">Item 3</div></div>
+          </div>
+
+          <p style="margin-top: 1.5rem">
+            You can also control vertical alignment for an entire row or for
+            individual columns.
+          </p>
+
+          <div
+            class="flex-grid with-gutters align-middle"
+            style="height: 120px; background-color: #f4f4f4; border-radius: 4px"
+          >
+            <div class="flex-col sm-4 self-top">
+              <div class="demo-box">Self Top</div>
+            </div>
+            <div class="flex-col sm-4">
+              <div class="demo-box">Aligned Middle</div>
+            </div>
+            <div class="flex-col sm-4 self-bottom">
+              <div class="demo-box">Self Bottom</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="content-well-wide">
+          <h2>Quick Start</h2>
+          <p>
+            Just add the `smidgen.min.css` file and start building with this
+            simple structure.
+          </p>
+          <pre><code>&lt;!-- A full-width section with a centered container --&gt;
 &lt;div class="content-wrapper"&gt;
   &lt;div class="content-well"&gt;
     &lt;!-- A responsive grid with gutters --&gt;
@@ -290,13 +293,14 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+        </div>
       </div>
-    </div>
+    </main>
 
-    <div class="content-wrapper footer">
+    <footer class="content-wrapper footer">
       <div class="content-well">
         <p>&copy; 2025 Smidgen CSS. Released under the MIT License.</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
