@@ -1,0 +1,13 @@
+{
+  "name": "smidgencss",
+  "version": "1.0.0",
+  "description": "A featherlight CSS framework",
+  "main": "smidgen.css",
+  "scripts": {
+    "build": "lightningcss --minify smidgen.css -o smidgen.min.css",
+    "watch": "lightningcss --minify smidgen.css -o smidgen.min.css --watch"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.30.1"
+  }
+}

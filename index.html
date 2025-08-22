@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Smidgen CSS - A Featherlight, Minimalist CSS Framework</title>
+    <meta
+      name="description"
+      content="Smidgen CSS is a tiny, no-nonsense CSS grid and layout system built with Flexbox for speed and simplicity."
+    />
+    <meta
+      name="keywords"
+      content="css, grid, flexbox, lightweight, simple, framework, minimalist, responsive"
+    />
+
+    <link rel="stylesheet" href="smidgen.min.css" />
+
+    <style>
+      /* Basic Typography & Colors */
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #fff;
+        color: #333;
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #111;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2.2rem;
+        margin-top: 3rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      a {
+        color: #111;
+        text-decoration: none;
+      }
+
+      /* Code Block Styling */
+      pre {
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        overflow-x: auto;
+        white-space: pre-wrap;
+      }
+
+      /* Component Styles */
+      .hero {
+        background-color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #222;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+      .cta-button:hover {
+        background-color: #000;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #888;
+        border-top: 1px solid #eee;
+      }
+
+      .demo-box {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 0.75rem 1rem;
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper hero">
+      <div class="content-well">
+        <h1>Smidgen CSS</h1>
+        <p>
+          A featherlight, no-nonsense CSS grid and layout system built for speed
+          and simplicity.
+        </p>
+        <a href="#" class="cta-button">Download</a>
+        <a
+          href="#"
+          class="cta-button"
+          style="background-color: #eee; color: #333"
+          >View on GitHub</a
+        >
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-well-wide">
+        <h2>The Grid</h2>
+        <p>
+          The grid is a 12-column fluid grid with a max width. It's designed to
+          be mobile-first. Columns stack on small screens and expand as the
+          viewport increases.
+        </p>
+
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-1"><div class="demo-box">1</div></div>
+          <div class="flex-col md-11"><div class="demo-box">11</div></div>
+        </div>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-2"><div class="demo-box">2</div></div>
+          <div class="flex-col md-10"><div class="demo-box">10</div></div>
+        </div>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-3"><div class="demo-box">3</div></div>
+          <div class="flex-col md-9"><div class="demo-box">9</div></div>
+        </div>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-4"><div class="demo-box">4</div></div>
+          <div class="flex-col md-8"><div class="demo-box">8</div></div>
+        </div>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-5"><div class="demo-box">5</div></div>
+          <div class="flex-col md-7"><div class="demo-box">7</div></div>
+        </div>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col md-6"><div class="demo-box">6</div></div>
+          <div class="flex-col md-6"><div class="demo-box">6</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-well">
+        <h2>Containers</h2>
+        <p>
+          Use containers to constrain and center your content. Each is shown
+          below within a full-width `.content-wrapper` to demonstrate its
+          max-width.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-wrapper" style="background-color: #f4f4f4">
+      <div class="content-well-narrow">
+        <div
+          class="demo-box"
+          style="background-color: #fff; border: 1px solid #eee"
+        >
+          .content-well-narrow (900px)
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper" style="background-color: #f4f4f4">
+      <div class="content-well">
+        <div
+          class="demo-box"
+          style="background-color: #fff; border: 1px solid #eee"
+        >
+          .content-well (1140px)
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper" style="background-color: #f4f4f4">
+      <div class="content-well-wide">
+        <div
+          class="demo-box"
+          style="background-color: #fff; border: 1px solid #eee"
+        >
+          .content-well-wide (1320px)
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-well">
+        <h2>More Features</h2>
+
+        <h3>Auto & Shrink Columns</h3>
+        <p>
+          Use <code>.col-auto</code> to have a column fill remaining space, and
+          <code>.col-shrink</code> to have it only take up the space its content
+          needs.
+        </p>
+        <div class="flex-grid with-gutters">
+          <div class="flex-col col-shrink">
+            <div class="demo-box">Shrink</div>
+          </div>
+          <div class="flex-col col-auto"><div class="demo-box">Auto</div></div>
+          <div class="flex-col sm-3"><div class="demo-box">sm-3</div></div>
+        </div>
+
+        <h3>Alignment Utilities</h3>
+        <p>
+          Easily align columns horizontally and vertically. Below, we align
+          three columns with space around them.
+        </p>
+
+        <div class="flex-grid with-gutters justify-around">
+          <div class="flex-col sm-3"><div class="demo-box">Item 1</div></div>
+          <div class="flex-col sm-3"><div class="demo-box">Item 2</div></div>
+          <div class="flex-col sm-3"><div class="demo-box">Item 3</div></div>
+        </div>
+
+        <p style="margin-top: 1.5rem">
+          You can also control vertical alignment for an entire row or for
+          individual columns.
+        </p>
+
+        <div
+          class="flex-grid with-gutters align-middle"
+          style="height: 120px; background-color: #f4f4f4; border-radius: 4px"
+        >
+          <div class="flex-col sm-4 self-top">
+            <div class="demo-box">Self Top</div>
+          </div>
+          <div class="flex-col sm-4">
+            <div class="demo-box">Aligned Middle</div>
+          </div>
+          <div class="flex-col sm-4 self-bottom">
+            <div class="demo-box">Self Bottom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-well-wide">
+        <h2>Quick Start</h2>
+        <p>
+          Just add the `smidgen.min.css` file and start building with this
+          simple structure.
+        </p>
+        <pre><code>&lt;!-- A full-width section with a centered container --&gt;
+&lt;div class="content-wrapper"&gt;
+  &lt;div class="content-well"&gt;
+    &lt;!-- A responsive grid with gutters --&gt;
+    &lt;div class="flex-grid with-gutters"&gt;
+      &lt;div class="flex-col sm-12 md-6"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="flex-col sm-12 md-6"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="content-wrapper footer">
+      <div class="content-well">
+        <p>&copy; 2025 Smidgen CSS. Released under the MIT License.</p>
+      </div>
+    </div>
+  </body>
+</html>
