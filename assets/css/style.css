@@ -1,0 +1,361 @@
+/*
+ * Smidgen theme — supplementary component styles.
+ *
+ * Design tokens (colors, fonts, base typography) live in theme.json.
+ * This file handles things theme.json can't express: component
+ * selectors, hover states, pseudo-element separators, and prose
+ * typography inside post content.
+ */
+
+/* ---------- Site header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--wp--preset--color--border);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.site-header .wp-block-site-title {
+  margin: 0;
+}
+
+.site-header .wp-block-site-title a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast);
+}
+
+.site-nav .wp-block-navigation a {
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast-2);
+  font-size: 0.95rem;
+}
+
+.site-nav .wp-block-navigation a:hover {
+  color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Article header (single post) ---------- */
+
+.content-wrapper.article-header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.article-header .wp-block-post-terms {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--wp--preset--color--contrast-3);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.article-header .wp-block-post-terms a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-header .wp-block-post-title {
+  margin-bottom: 1rem;
+}
+
+.article-meta {
+  color: var(--wp--preset--color--contrast-3);
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.article-meta > * {
+  margin: 0;
+}
+
+.article-meta > *:not(:first-child)::before {
+  content: "·";
+  margin-right: 0.75rem;
+  opacity: 0.5;
+}
+
+/* ---------- Featured image (single post) ---------- */
+
+.content-wrapper.article-featured {
+  padding-top: 0;
+  padding-bottom: 2.5rem;
+}
+
+.article-featured img {
+  border-radius: 4px;
+}
+
+/* ---------- Article body ---------- */
+
+.content-wrapper.article-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+/* ---------- Prose typography (post content) ---------- */
+
+.entry-content {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.entry-content > * + * {
+  margin-top: 1.25rem;
+}
+
+.entry-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.entry-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-content a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.entry-content a:hover {
+  color: var(--wp--preset--color--contrast-3);
+}
+
+.entry-content blockquote {
+  border-left: 3px solid var(--wp--preset--color--contrast);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--wp--preset--color--contrast);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.entry-content ul,
+.entry-content ol {
+  padding-left: 1.5rem;
+}
+
+.entry-content li {
+  margin-bottom: 0.5rem;
+}
+
+.entry-content code {
+  background: var(--wp--preset--color--subtle-background);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: var(--wp--preset--font-family--system-mono);
+}
+
+.entry-content pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.entry-content hr {
+  border: none;
+  border-top: 1px solid var(--wp--preset--color--border);
+  margin: 3rem 0;
+}
+
+/* ---------- Article footer (tags + back link) ---------- */
+
+.content-wrapper.article-footer {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
+
+.article-footer-inner {
+  border-top: 1px solid var(--wp--preset--color--border);
+  padding-top: 2.5rem;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.article-tags a {
+  display: inline-block;
+  background: var(--wp--preset--color--subtle-background);
+  color: var(--wp--preset--color--contrast-2);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.article-tags a:hover {
+  background: var(--wp--preset--color--border);
+  color: var(--wp--preset--color--contrast);
+}
+
+.back-link {
+  color: var(--wp--preset--color--contrast-3);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Post navigation (prev/next single post) ---------- */
+
+.post-nav {
+  background: var(--wp--preset--color--subtle-background);
+  border-top: 1px solid var(--wp--preset--color--border);
+  border-bottom: 1px solid var(--wp--preset--color--border);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.post-nav .wp-block-post-navigation-link {
+  font-size: 0.95rem;
+}
+
+.post-nav .wp-block-post-navigation-link a {
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast-2);
+}
+
+.post-nav .wp-block-post-navigation-link a:hover {
+  color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Archive / Search header ---------- */
+
+.content-wrapper.archive-header,
+.content-wrapper.search-header {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.archive-header .wp-block-query-title,
+.search-header .wp-block-query-title {
+  margin-bottom: 1rem;
+}
+
+.search-header .wp-block-search {
+  max-width: 28rem;
+  margin: 1.5rem auto 0;
+}
+
+/* ---------- 404 page ---------- */
+
+.content-wrapper.error-404 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.error-404 .wp-block-search {
+  max-width: 28rem;
+  margin: 2rem auto;
+}
+
+/* ---------- Post summary (index, archive, search results) ---------- */
+
+.post-summary {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.post-summary + .post-summary {
+  border-top: 1px solid var(--wp--preset--color--border);
+  padding-top: 2rem;
+}
+
+.post-summary .wp-block-post-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-summary .wp-block-post-title a {
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast);
+}
+
+.post-summary .wp-block-post-title a:hover {
+  color: var(--wp--preset--color--contrast-2);
+}
+
+.post-meta {
+  color: var(--wp--preset--color--contrast-3);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Pagination ---------- */
+
+.wp-block-query-pagination {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+.wp-block-query-pagination a {
+  text-decoration: none;
+  color: var(--wp--preset--color--contrast-2);
+}
+
+.wp-block-query-pagination a:hover {
+  color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Site footer ---------- */
+footer {
+  margin-top: 0;
+}
+.site-footer {
+  border-top: 1px solid var(--wp--preset--color--border);
+  color: var(--wp--preset--color--contrast-3);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--wp--preset--color--contrast-3);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--wp--preset--color--contrast);
+}
+
+.site-footer h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--wp--preset--color--contrast);
+  margin-bottom: 0.75rem;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--wp--preset--color--border);
+}

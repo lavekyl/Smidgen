@@ -1,0 +1,99 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main"} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"tagName":"article","className":"article"} -->
+	<article class="wp-block-group article">
+
+		<!-- wp:smidgen/content-wrapper {"className":"article-header"} -->
+		<div class="wp-block-smidgen-content-wrapper content-wrapper article-header">
+			<!-- wp:smidgen/content-well {"size":"narrow"} -->
+			<div class="wp-block-smidgen-content-well content-well-narrow">
+				<!-- wp:post-terms {"term":"category","className":"article-eyebrow"} /-->
+
+				<!-- wp:post-title {"level":1} /-->
+
+				<!-- wp:group {"className":"article-meta","layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
+				<div class="wp-block-group article-meta">
+					<!-- wp:post-author-name /-->
+
+					<!-- wp:post-date /-->
+
+					<!-- wp:post-time-to-read /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:smidgen/content-well -->
+		</div>
+		<!-- /wp:smidgen/content-wrapper -->
+
+		<!-- wp:smidgen/content-wrapper {"className":"article-featured"} -->
+		<div class="wp-block-smidgen-content-wrapper content-wrapper article-featured">
+			<!-- wp:smidgen/content-well -->
+			<div class="wp-block-smidgen-content-well content-well">
+				<!-- wp:post-featured-image /-->
+			</div>
+			<!-- /wp:smidgen/content-well -->
+		</div>
+		<!-- /wp:smidgen/content-wrapper -->
+
+		<!-- wp:smidgen/content-wrapper {"className":"article-body"} -->
+		<div class="wp-block-smidgen-content-wrapper content-wrapper article-body">
+			<!-- wp:smidgen/content-well {"size":"narrow"} -->
+			<div class="wp-block-smidgen-content-well content-well-narrow">
+				<!-- wp:post-content /-->
+			</div>
+			<!-- /wp:smidgen/content-well -->
+		</div>
+		<!-- /wp:smidgen/content-wrapper -->
+
+		<!-- wp:smidgen/content-wrapper {"className":"article-footer"} -->
+		<div class="wp-block-smidgen-content-wrapper content-wrapper article-footer">
+			<!-- wp:smidgen/content-well {"size":"narrow"} -->
+			<div class="wp-block-smidgen-content-well content-well-narrow">
+				<!-- wp:group {"className":"article-footer-inner"} -->
+				<div class="wp-block-group article-footer-inner">
+					<!-- wp:post-terms {"term":"post_tag","className":"article-tags"} /-->
+
+					<!-- wp:paragraph -->
+					<p><a class="back-link" href="/">← Back to all posts</a></p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:smidgen/content-well -->
+		</div>
+		<!-- /wp:smidgen/content-wrapper -->
+
+	</article>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"tagName":"nav","className":"content-wrapper post-nav"} -->
+	<nav class="wp-block-group content-wrapper post-nav">
+		<!-- wp:smidgen/content-well -->
+		<div class="wp-block-smidgen-content-well content-well">
+			<!-- wp:smidgen/grid -->
+			<div class="wp-block-smidgen-grid flex-grid with-gutters">
+				<!-- wp:smidgen/column {"widthMd":"6"} -->
+				<div class="wp-block-smidgen-column flex-col md-6">
+					<!-- wp:post-navigation-link {"label":"← Previous","showTitle":true,"type":"previous"} /-->
+				</div>
+				<!-- /wp:smidgen/column -->
+
+				<!-- wp:smidgen/column {"widthMd":"6"} -->
+				<div class="wp-block-smidgen-column flex-col md-6">
+					<!-- wp:post-navigation-link {"label":"Next →","showTitle":true} /-->
+				</div>
+				<!-- /wp:smidgen/column -->
+			</div>
+			<!-- /wp:smidgen/grid -->
+		</div>
+		<!-- /wp:smidgen/content-well -->
+	</nav>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

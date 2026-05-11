@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main"} -->
+<main class="wp-block-group">
+
+	<!-- wp:smidgen/content-wrapper {"className":"search-header"} -->
+	<div class="wp-block-smidgen-content-wrapper content-wrapper search-header">
+		<!-- wp:smidgen/content-well {"size":"narrow"} -->
+		<div class="wp-block-smidgen-content-well content-well-narrow">
+			<!-- wp:query-title {"type":"search","level":1} /-->
+
+			<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true} /-->
+		</div>
+		<!-- /wp:smidgen/content-well -->
+	</div>
+	<!-- /wp:smidgen/content-wrapper -->
+
+	<!-- wp:smidgen/content-wrapper -->
+	<div class="wp-block-smidgen-content-wrapper content-wrapper">
+		<!-- wp:smidgen/content-well -->
+		<div class="wp-block-smidgen-content-well content-well">
+			<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template -->
+					<!-- wp:group {"tagName":"article","className":"post-summary"} -->
+					<article class="wp-block-group post-summary">
+						<!-- wp:post-title {"level":2,"isLink":true} /-->
+
+						<!-- wp:post-date {"className":"post-meta"} /-->
+
+						<!-- wp:post-excerpt /-->
+					</article>
+					<!-- /wp:group -->
+				<!-- /wp:post-template -->
+
+				<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+					<!-- wp:query-pagination-previous /-->
+					<!-- wp:query-pagination-numbers /-->
+					<!-- wp:query-pagination-next /-->
+				<!-- /wp:query-pagination -->
+
+				<!-- wp:query-no-results -->
+					<!-- wp:paragraph -->
+					<p>No results. Try different keywords.</p>
+					<!-- /wp:paragraph -->
+				<!-- /wp:query-no-results -->
+			</div>
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:smidgen/content-well -->
+	</div>
+	<!-- /wp:smidgen/content-wrapper -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
