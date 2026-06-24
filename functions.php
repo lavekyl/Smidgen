@@ -6,6 +6,20 @@
  * @package Smidgen
  */
 
+require_once get_template_directory() . '/vendor/autoload.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$smidgen_theme_update_checker = PucFactory::buildUpdateChecker(
+  'https://github.com/lavekyl/Smidgen/',
+  __FILE__,
+  'smidgen'
+);
+
+$smidgen_theme_update_checker->setBranch('main');
+/** @disregard P1013 */
+$smidgen_theme_update_checker->getVcsApi()->enableReleaseAssets();
+
 if (! defined('ABSPATH')) {
   exit;
 }
