@@ -139,4 +139,4 @@ SmidgenCSS framework is MIT-licensed and bundled in `assets/css/smidgen.min.css`
 
 ## Credits
 
-Built on [SmidgenCSS](https://smidgencss.com). Update flow handled by [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker).
+Built on [SmidgenCSS](https://smidgencss.com).
