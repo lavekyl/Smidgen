@@ -66,6 +66,10 @@ Section patterns available from the Patterns inserter:
 - **Templates**: Edit any template in the Site Editor (Appearance → Editor → Templates)
 - **Patterns**: Add your own in `patterns/` following the docblock format of the included patterns
 
+## Updates
+
+The theme checks for new versions automatically. When a new release is published on GitHub, WordPress shows the standard theme update notice in your admin dashboard — same flow as any theme from the WordPress directory.
+
 ## Adding a build pipeline (optional)
 
 The theme ships buildless — `assets/css/style.css` is hand-edited and loaded directly. If your project grows past a single stylesheet and you'd rather work in Sass, either of the paths below drops in cleanly.
@@ -135,4 +139,4 @@ SmidgenCSS framework is MIT-licensed and bundled in `assets/css/smidgen.min.css`
 
 ## Credits
 
-Built on [SmidgenCSS](https://smidgencss.com).
+Built on [SmidgenCSS](https://smidgencss.com). Update flow handled by [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker).
